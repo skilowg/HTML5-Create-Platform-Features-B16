@@ -91,19 +91,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*$svgMask: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/44303/heart-mask-square.svg";
-
-.itemSVG video#video {
-  float:left;
-  margin:1%;
-  position:relative;
-  width:31.333%;
-  overflow:hidden;
-  background:$heartBG;
-  -webkit-mask: url($svgMask);
-  mask: url($svgMask);
-  transition:all 200ms ease-in;*/
-
 
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
@@ -136,6 +123,11 @@ header nav {
     text-transform: uppercase;
     padding-top: 1.6em;
     font-size: 15pt;
+}
+
+a:first-child {
+    color: #e4c168;
+    font-size: 18pt;
 }
 
 header nav a {
@@ -188,7 +180,18 @@ article {
     margin-top: 11.5em;
 }
 
+.tw_icon, .fb_icon {
+    width: 30px;
+    height: 30px;
+    fill: #e4c168;
+    padding: .5em 0px;
+}
 
+.tw_icon:hover, .fb_icon:hover {
+    fill: #be110a;
+    transition-property: fill;
+    transition-duration: .3s;
+}
 
 video#bgvid {
     position: absolute;
@@ -231,7 +234,7 @@ footer p {
 }
 
 aside {
-    position: absolute;
+    position: fixed;
     right: 0;
     width: 36px;
     height: 111px;
@@ -239,6 +242,38 @@ aside {
 }
 
 
+
+video#video, video#canvas {
+    border: 1px solid #000000;
+    margin: auto;
+}
+
+video#video {
+    float: left;
+}
+
+video#canvas {
+    float: right;
+}
+
+#snap {
+    margin: 0 auto;
+    position: relative;
+    display:block;
+    height: 45px;
+    width: 150px;
+    padding: 5px 5px;
+    margin-top: 4em;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #000;
+    border: 3px #000 solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+}
 
 /* ==========================================================================
    Helper classes
