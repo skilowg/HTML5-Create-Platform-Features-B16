@@ -91,17 +91,109 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    height: 5.5em;
+    z-index: 1000;
+}
+
+header nav {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15pt;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #e4c168;
+    -webkit-transition: 0.3s color ease-in-out;
+    -moz-transition: 0.3s color ease-in-out;
+}
+
+main {
+    width: 960px;
+}
+
+article {
+    margin: auto;
+    max-width: 960px;
+    width: 100%;
+    padding-top: 3em;
+}
+
+.hero {
+    width: 100%;
+    margin: 0 auto;
+    height: 23em;
+    display: relative;
+}
+
+.hero h1, .hero h2{
+    line-height: 160%;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    width: 20em;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.hero h1 {
+    margin-top: 12em;
+}
 
 
 
+video#bgvid {
+    position: absolute;
+    background-position: 50% 50%;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
 
+main {
+    background-color: #ffffff;
+    z-index: 10;
+    width: 100%;
+}
 
+.video-container1 {
+    float: left;
+}
 
+.video-container2 {
+    float: right;
+}
 
-
-
-
-
+footer {
+    display: block;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+    padding: 0 3em;
+}
 
 
 
