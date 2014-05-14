@@ -91,6 +91,29 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*$svgMask: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/44303/heart-mask-square.svg";
+
+.itemSVG video#video {
+  float:left;
+  margin:1%;
+  position:relative;
+  width:31.333%;
+  overflow:hidden;
+  background:$heartBG;
+  -webkit-mask: url($svgMask);
+  mask: url($svgMask);
+  transition:all 200ms ease-in;*/
+
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25pt;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
 body {
     background-color: #ffffff;
     width: 100%;
@@ -111,28 +134,36 @@ header {
 header nav {
     color: #ffffff;
     text-transform: uppercase;
+    padding-top: 1.6em;
     font-size: 15pt;
 }
 
 header nav a {
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    padding: 3em 2em 0 2em;
 }
 
 header nav a:hover {
     color: #e4c168;
-    -webkit-transition: 0.3s color ease-in-out;
-    -moz-transition: 0.3s color ease-in-out;
+    -webkit-transition: 0.2s color ease-in-out;
+    -moz-transition: 0.2s color ease-in-out;
 }
 
+
 main {
-    width: 960px;
+    background-color: #ffffff;
+    z-index: 10;
+    width: 100%;
+    margin-bottom: 3em;
 }
 
 article {
     margin: auto;
     max-width: 960px;
     width: 100%;
-    padding-top: 3em;
+    padding-top: 6em;
 }
 
 .hero {
@@ -154,7 +185,7 @@ article {
 }
 
 .hero h1 {
-    margin-top: 12em;
+    margin-top: 11.5em;
 }
 
 
@@ -173,12 +204,6 @@ video#bgvid {
     background-size: cover;
 }
 
-main {
-    background-color: #ffffff;
-    z-index: 10;
-    width: 100%;
-}
-
 .video-container1 {
     float: left;
 }
@@ -187,15 +212,31 @@ main {
     float: right;
 }
 
+div {
+    padding-bottom: 3em;
+}
+
 footer {
-    display: block;
+    /* display: block; */
     bottom: 0;
     width: 100%;
     clear: both;
-    padding: 0 3em;
+    margin-top: 3em;
+    padding: 1em 0;
+    background-color: #e4c168;
 }
 
+footer p {
+    text-align: center;
+}
 
+aside {
+    position: absolute;
+    right: 0;
+    width: 36px;
+    height: 111px;
+    top: 100px
+}
 
 
 

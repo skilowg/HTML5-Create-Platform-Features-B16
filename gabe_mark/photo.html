@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+ <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Justin Timberlake</title>
+        <meta name="description" content="All Things JT">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript">
+            // Put event listeners into place
+            window.addEventListener("DOMContentLoaded", function() {
+              // Grab elements, create settings, etc.
+              var canvas = document.getElementById("canvas"),
+                context = canvas.getContext("2d"),
+                video = document.getElementById("video"),
+                videoObj = { "video": true },
+                errBack = function(error) {
+                  console.log("Video capture error: ", error.code);
+                };
+
+              // Put video listeners into place
+              if(navigator.getUserMedia) { // Standard
+                navigator.getUserMedia(videoObj, function(stream) {
+                  video.src = stream;
+                  video.play();
+                }, errBack);
+              } else if(navigator.webkitGetUserMedia) { // WebKit-prefixed
+                navigator.webkitGetUserMedia(videoObj, function(stream){
+                  video.src = window.webkitURL.createObjectURL(stream);
+                  video.play();
+                }, errBack);
+              }
+              else if(navigator.mozGetUserMedia) { // Firefox-prefixed
+                navigator.mozGetUserMedia(videoObj, function(stream){
+                  video.src = window.URL.createObjectURL(stream);
+                  video.play();
+                }, errBack);
+              }
+            // Trigger photo take
+                document.getElementById("snap").addEventListener("click", function() {
+                  context.drawImage(video, 0, 0, 400, 300);
+                });
+            }, false);
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html">Justin</a>
+                <a href="music.html">Music</a>
+                <a href="photo.html">Photo With Justin</a>
+                <a href="contest.html">Contest</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1>HTML5 Photo</h1>
+                <div class="itemSVG">
+                <video id="video" width="400" height="300" autoplay></video>
+                </div>
+                <button id="snap">Snap Photo</button>
+                <canvas id="canvas" width="400" height="300"></canvas>
+            </article>
+        </main>
+
+        <aside>
+            <a href="#"><img src="#"></a>
+            <a href="#"><img src="#"></a>
+        </aside>
+
+        <footer>
+            <p>Copyright GM &copy; 2014</p>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+    </body>
+</html>
