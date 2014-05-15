@@ -11,9 +11,9 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 /*
@@ -23,13 +23,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 /*
@@ -37,12 +37,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 /*
@@ -55,7 +55,7 @@ canvas,
 img,
 svg,
 video {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*
@@ -63,9 +63,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -73,7 +73,7 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 /* ==========================================================================
@@ -81,10 +81,10 @@ textarea {
    ========================================================================== */
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
 
 /* ==========================================================================
@@ -93,186 +93,224 @@ textarea {
 
 
 h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 25pt;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25pt;
 }
 
 p {
-    font-family: 'Lora', serif;
+  font-family: 'Lora', serif;
+  font-size: 	16pt;
+  line-height: 1.5em;
 }
 
 body {
-    background-color: #ffffff;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: black;
-    width: 100%;
-    margin: auto;
-    position: fixed;
-    top: 0;
-    height: 5.5em;
-    z-index: 1000;
+  background-color: black;
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  height: 5.5em;
+  z-index: 1000;
 }
 
 header nav {
-    color: #ffffff;
-    text-transform: uppercase;
-    padding-top: 1.6em;
-    font-size: 15pt;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 1.5em;
+  font-size: 15pt;
 }
 
 a:first-child {
-    color: #e4c168;
-    font-size: 18pt;
+  color: #e4c168;
+  font-size: 18pt;
 }
 
 header nav a {
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    padding: 3em 2em 0 2em;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  padding: 3em 2em 0 2em;
 }
 
 header nav a:hover {
-    color: #e4c168;
-    -webkit-transition: 0.2s color ease-in-out;
-    -moz-transition: 0.2s color ease-in-out;
+  color: #e4c168;
+  -webkit-transition: 0.2s color ease-in-out;
+  -moz-transition: 0.2s color ease-in-out;
 }
 
-
 main {
-    background-color: #ffffff;
-    z-index: 10;
-    width: 100%;
-    margin-bottom: 3em;
+  background-color: #ffffff;
+  z-index: 10;
+  width: 100%;
+  margin-top: 8em;
+  margin-bottom: 3em;
 }
 
 article {
-    margin: auto;
-    max-width: 960px;
-    width: 100%;
-    padding-top: 6em;
+  margin: auto;
+  max-width: 960px;
+  width: 100%;
 }
 
 .hero {
-    width: 100%;
-    margin: 0 auto;
-    height: 23em;
-    display: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 23em;
+  display: relative;
 }
 
-.hero h1, .hero h2{
-    line-height: 160%;
-    text-transform: uppercase;
-    background-color: #ffffff;
-    width: 20em;
-    text-align: center;
-    margin: 0 auto;
-    position: relative;
-
+.home {
+	padding-top: 2em;
 }
 
-.hero h1 {
-    margin-top: 11.5em;
+.hero h1, .hero h2 {
+  line-height: 160%;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  width: 20em;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+
 }
 
 .tw_icon, .fb_icon {
-    width: 30px;
-    height: 30px;
-    fill: #e4c168;
-    padding: .5em 0px;
+  width: 30px;
+  height: 30px;
+  fill: #e4c168;
+  padding: .5em 0px;
 }
 
 .tw_icon:hover, .fb_icon:hover {
-    fill: #be110a;
-    transition-property: fill;
-    transition-duration: .3s;
+  fill: #be110a;
+  transition-property: fill;
+  transition-duration: .3s;
 }
 
 video#bgvid {
-    position: absolute;
-    background-position: 50% 50%;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
+  position: absolute;
+  background-position: 50% 50%;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
 }
 
 .video-container1 {
-    float: left;
+  float: left;
 }
 
 .video-container2 {
-    float: right;
+  float: right;
+}
+
+form {
+	font-family: 'Lora', serif;
+	font-size: 12pt;
+	color: #333;
+	max-width: 454px;
+}
+
+form legend {
+	font-family: 'Montserrat', sans-serif;
+  font-size: 16pt;
+  padding-bottom: 1em;
+}
+
+form label {
+	display: block;
+	padding-top: .5em;
+}
+
+form input {
+	position: relative;
+	width: 100%;
+	padding: 0.8em;
+	outline: none;
+	border: 1px solid #ddd;
+	border-radius: 1;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=tel] {
+	font-family: 'Lora', sans-serif;
+	font-weight: bold;
+	font-size: 12pt;
 }
 
 div {
-    padding-bottom: 3em;
+  padding-bottom: 3em;
 }
 
 footer {
-    /* display: block; */
-    bottom: 0;
-    width: 100%;
-    clear: both;
-    margin-top: 3em;
-    padding: 1em 0;
-    background-color: #e4c168;
+  /* display: block; */
+  bottom: 0;
+  width: 100%;
+  clear: both;
+  margin-top: 3em;
+  padding: 1em 0;
+  background-color: #e4c168;
 }
 
 footer p {
-    text-align: center;
+  text-align: center;
 }
 
 aside {
-    position: fixed;
-    right: 0;
-    width: 36px;
-    height: 111px;
-    top: 100px
+  position: fixed;
+  right: 0;
+  width: 36px;
+  height: 111px;
+  top: 100px
 }
 
-
-
 video#video, video#canvas {
-    border: 1px solid #000000;
-    margin: auto;
+  border: 1px solid #000000;
+  margin: auto;
 }
 
 video#video {
-    float: left;
+  float: left;
 }
 
 video#canvas {
-    float: right;
+  float: right;
 }
 
-#snap {
-    margin: 0 auto;
-    position: relative;
-    display:block;
-    height: 45px;
-    width: 150px;
-    padding: 5px 5px;
-    margin-top: 4em;
-    font-size: 15px;
-    letter-spacing: 2px;
-    color: #000;
-    border: 3px #000 solid;
-    border-radius: 4px;
-    text-transform: uppercase;
-    outline: 0;
-    overflow:hidden;
-    background: none;
+button {
+  margin: 0 auto;
+  position: relative;
+  display:block;
+  padding: 1em 1em;
+  margin-top: 2em;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #000;
+  border: 3px #000 solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+}
+
+button:hover {
+	cursor: hand;
+	background-color: #e4c168;
+	opacity: 0.8;
 }
 
 /* ==========================================================================
@@ -284,8 +322,8 @@ video#canvas {
  */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+  display: none !important;
+  visibility: hidden;
 }
 
 /*
@@ -293,14 +331,14 @@ video#canvas {
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /*
@@ -310,12 +348,12 @@ video#canvas {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
 }
 
 /*
@@ -323,7 +361,7 @@ video#canvas {
  */
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*
@@ -331,21 +369,21 @@ video#canvas {
  *
  * For modern browsers
  * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
+ *  `contenteditable` attribute is included anywhere else in the document.
+ *  Otherwise it causes space to appear at the top and bottom of elements
+ *  that receive the `clearfix` class.
  * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
+ *  `:before` to contain the top-margins of child elements.
  */
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /* ==========================================================================
@@ -355,14 +393,14 @@ video#canvas {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+     (-o-min-device-pixel-ratio: 5/4),
+     (-webkit-min-device-pixel-ratio: 1.25),
+     (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -371,64 +409,64 @@ video#canvas {
    ========================================================================== */
 
 @media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+  * {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
+  thead {
+    display: table-header-group; /* h5bp.com/t */
+  }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
 
-    img {
-        max-width: 100% !important;
-    }
+  img {
+    max-width: 100% !important;
+  }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
 }
